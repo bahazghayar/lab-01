@@ -1,0 +1,44 @@
+header {
+    width: 480px;
+    height: 75px;
+    max-width: 100%;
+}
+
+aside {
+    width: 480px;
+    height: 150px; 
+    max-width: 100%;
+    background-color: #c5d7bd;
+}
+
+
+footer {
+    width: 480px;
+    height: 80px;
+    max-width: 100%;
+}
+
+@media ( min-width: 768px) and (max-width: 960px) {
+ 
+header {
+        width: 960px;
+        height: 100px;
+}
+
+aside {
+    width: 200px;
+    height: 600px; 
+    max-width: 100%;
+    background-color: palevioletred;
+    float: left;
+}
+
+footer {
+    width: 760px;
+    height: 150px;
+    max-width: 100%;
+    float: right;
+}
+
+
+}   
