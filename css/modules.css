@@ -1,89 +1,56 @@
-header  {
+header {
     background-color: gray;
     text-align: center;
-    line-height: 75px;
+    line-height: 75px; 
 }
 
 aside {
     background-color: #c5d7bd;  
     line-height: 150px;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 #cDiv {
-    width: 480px;
-    height: 125px;
-    min-width: 100%;
     background-color: hotpink;
     text-align: center;
     line-height: 125px;
-    box-sizing: border-box;
-}
-
-#dDiv {
-    width: 480px;
-    height: 125px;
-    min-width: 100%;
-    background-color: indigo;
-    text-align: center;
-    line-height: 125px;
-    box-sizing: border-box;
-}
-
-#efDiv, #ghDiv{
-    width: 480px;
-    min-width: 100%;
-}
-
-#eDiv {
-    width: 240px;
-    height: 250px;
-    min-width: 50%;
-    background-color: lightgreen;
-    float: left;
-    text-align: center;
-    line-height: 250px;
-    box-sizing: border-box;
     
 }
 
+#dDiv {
+    background-color: indigo;
+    text-align: center;
+    line-height: 125px;
+   
+}
+
+#eDiv {
+
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 250px; 
+}
+
 #fDiv {
-    width: 240px;
-    height: 250px;
-    min-width: 50%;
     background-color: midnightblue;
-    float: right;
     text-align: center;
     line-height: 250px;
-    box-sizing: border-box;
+    
 }
 
 
 #gDiv {
-    width: 240px;
-    height: 250px;
-    min-width: 50%;
     background-color: olive;
-    float: left;
     text-align: center;
     line-height: 250px;
-    box-sizing: border-box;
+
 }
 
 #hDiv {
-    width: 240px;
-    height: 250px;
-    min-width: 50%;
     background-color: orange;
-    float: right;
     text-align: center;
     line-height: 250px;
-    box-sizing: border-box;
-}
-
-.clear{
-    clear:both;
+   
 }
 
 footer {
@@ -92,80 +59,104 @@ footer {
     line-height: 80px;
 }
 
+@media ( min-width: 481px) and (max-width: 768px) {
 
-@media ( min-width: 768px)  {
-     
-    header{
-             background-color: palegreen;
-             text-align: center;
-             line-height: 100px;
-    }
-         
-    aside{
-        background-color: palevioletred;
-        line-height: 600px;
+    header {
+        background-color: #e40017 ;
         text-align: center;
+        line-height: 100px;
+    }  
+
+
+    aside {
+    background-color: #94ebcd;
+    line-height: 600px;
+    text-align: center;
     }
 
     #cDiv {
-        width: 50%;
-        height: 200px;
-        background-color: peru;
+        
+        background-color: #a1cae2;
         text-align: center;
-        line-height: 200px;
-        float: left;
-        min-width: 50%;
+        line-height: 100px;
+        
     }
  
 
     #dDiv {
-        width: 50%;
-        height: 200px;
-        background-color: salmon;
+        
+        background-color: #91091e;
         text-align: center;
-        line-height: 200px;
-        float: right;
-        min-width: 50%;
+        line-height: 100px;
+       
+    }
+
+    #eDiv , #fDiv , #gDiv , #hDiv {
+        
+        line-height: 125px;
     }
 
     #eDiv {
-        width:50%;
-    }
-    
+        background-color: #822659;
+    } 
+
     #fDiv {
-        width:50%;
-    }
+        background-color: #a4ebf3;
+    } 
 
-    #efDiv{
-        width: 50%;
-        height: 200px;
-        float: left;
-        min-width: 50%;
-    }
-    
     #gDiv {
-        width:50%;
-    }
-    
-    #hDiv {
-        width:50%;
-    }
-    
-    #ghDiv{
-        width: 50%;
-        height: 200px;
-        float: right;
-        min-width: 50%;
-    }   
+        background-color: #ffc75f ;
+    } 
 
+    #hDiv {
+        background-color: #351f39 ;
+    } 
+
+    footer  {
+        
+        background-color: #da723c;
+        text-align: center;
+        line-height: 150px;
+    } 
+} 
+
+
+@media ( min-width: 769px) {
+
+    header {
+        background-color: palegreen;
+        text-align: center;
+        line-height: 100px;
+    }  
+
+
+    aside {
+    background-color: palevioletred;
+    line-height: 600px;
+    text-align: center;
+    }
+
+    #cDiv {
+        
+        background-color: peru;
+        text-align: center;
+        line-height: 200px;
+    }
+ 
+
+    #dDiv {
+       
+        background-color: salmon;
+        text-align: center;
+        line-height: 200px;
+        
+    }
+    
     footer  {
         background-color: steelblue;
         text-align: center;
         line-height: 150px;
     } 
 
-    .clear{
-        clear: none;
-    }
-}
 
+} 

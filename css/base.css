@@ -47,28 +47,87 @@ table {
 	border-spacing: 0;
 }
 
-/* html {
-    display: table;
-    margin: auto;
-} */
-
 * {
     box-sizing: border-box;
 }
 
-@media ( min-width: 768px)  {
-    body {
-       margin: auto;
-       max-width: 960px;
+header{ grid-area: header;}
+aside{grid-area:aside;  }
+main {grid-area: main;}
+footer{grid-area: footer;}
 
-    }
-
-	main{
-		float: right;
-		height: 450px;
-		width: 568px;
-		min-width: calc(100% - 200px);
-	}
-
+body {
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'aside aside'
+    'main main'
+    'footer footer';
 }
 
+#cDiv{ grid-area: cDiv;}
+#dDiv{grid-area:  dDiv;  }
+#eDiv{grid-area: eDiv;}
+#fDiv{grid-area: fDiv;}
+#gDiv{grid-area: gDiv;}
+#hDiv{grid-area: hDiv;}
+
+main {
+    display: grid;
+    grid-template-areas:
+    'cDiv cDiv'
+    'dDiv dDiv'
+    'eDiv fDiv'
+    'gDiv hDiv';
+
+    line-height: 250px;
+}
+
+@media ( min-width: 481px) and (max-width: 768px) {  
+
+	body {
+		margin: auto;
+		max-width: 768px;
+ 
+		display: grid;
+		 grid-template-areas:
+		 'header header header'
+		 'aside main main'
+		 'aside main main'
+		 'aside footer footer';
+	 }
+ 
+	 main{
+		 display: grid;
+		 grid-template-areas:
+		 'cDiv cDiv'
+		 'dDiv dDiv'
+		 'eDiv fDiv'
+		 'gDiv hDiv'
+	 }
+
+
+}	
+
+@media ( min-width: 769px) {
+
+	body {
+		margin: auto;
+		max-width: 768px;
+ 
+		display: grid;
+		 grid-template-areas:
+		 'header header header'
+		 'aside main main'
+		 'aside main main'
+		 'aside footer footer';
+	 }
+ 
+	 main{
+ 
+		 display: grid;
+		 grid-template-areas:
+		 'cDiv cDiv dDiv dDiv'
+		 'eDiv fDiv gDiv hDiv'
+	 }
+}
