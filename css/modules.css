@@ -1,176 +1,171 @@
-header div {
-    width: 100%;
-    height: 100%;
+header  {
     background-color: gray;
-}
-
-header div p{
     text-align: center;
     line-height: 75px;
 }
 
-
-
-aside p {
-   line-height: 150px;
-   text-align: center;
+aside {
+    background-color: #c5d7bd;  
+    line-height: 150px;
+    text-align: center;
+    
 }
-
-
 
 #cDiv {
     width: 480px;
     height: 125px;
+    min-width: 100%;
     background-color: hotpink;
     text-align: center;
     line-height: 125px;
+    box-sizing: border-box;
 }
 
 #dDiv {
     width: 480px;
     height: 125px;
+    min-width: 100%;
     background-color: indigo;
     text-align: center;
     line-height: 125px;
+    box-sizing: border-box;
+}
+
+#efDiv, #ghDiv{
+    width: 480px;
+    min-width: 100%;
 }
 
 #eDiv {
     width: 240px;
     height: 250px;
+    min-width: 50%;
     background-color: lightgreen;
     float: left;
     text-align: center;
     line-height: 250px;
+    box-sizing: border-box;
+    
 }
 
 #fDiv {
     width: 240px;
     height: 250px;
+    min-width: 50%;
     background-color: midnightblue;
     float: right;
     text-align: center;
     line-height: 250px;
+    box-sizing: border-box;
 }
+
 
 #gDiv {
     width: 240px;
     height: 250px;
+    min-width: 50%;
     background-color: olive;
     float: left;
     text-align: center;
     line-height: 250px;
+    box-sizing: border-box;
 }
 
 #hDiv {
     width: 240px;
     height: 250px;
+    min-width: 50%;
     background-color: orange;
     float: right;
     text-align: center;
     line-height: 250px;
+    box-sizing: border-box;
 }
 
+.clear{
+    clear:both;
+}
 
-
-footer div {
-    width: 100%;
-    height: 100%;
+footer {
     background-color: green;
-}
-
-footer div p {
     text-align: center;
     line-height: 80px;
 }
 
 
-@media ( min-width: 768px) and (max-width: 960px) {
+@media ( min-width: 768px)  {
      
-    header div {
-             width: 100%;
-             height: 100%;
+    header{
              background-color: palegreen;
-    }
-         
-    header div p{
              text-align: center;
              line-height: 100px;
-    }  
-    
-    
-    
-    aside p {
-       line-height: 600px;
-       text-align: center;
     }
-    
-    
-    
+         
+    aside{
+        background-color: palevioletred;
+        line-height: 600px;
+        text-align: center;
+    }
+
     #cDiv {
-        width: 380px;
+        width: 50%;
         height: 200px;
         background-color: peru;
         text-align: center;
         line-height: 200px;
         float: left;
+        min-width: 50%;
     }
-    
+ 
+
     #dDiv {
-        width: 380px;
+        width: 50%;
         height: 200px;
         background-color: salmon;
         text-align: center;
         line-height: 200px;
         float: right;
+        min-width: 50%;
     }
-    
+
     #eDiv {
-        width: 190px;
-        height: 250px;
-        background-color: tan;
-        float: left;
-        text-align: center;
-        line-height: 250px;
+        width:50%;
     }
     
     #fDiv {
-        width: 190px;
-        height: 250px;
-        background-color: teal;
+        width:50%;
+    }
+
+    #efDiv{
+        width: 50%;
+        height: 200px;
         float: left;
-        text-align: center;
-        line-height: 250px;
+        min-width: 50%;
     }
     
     #gDiv {
-        width: 190px;
-        height: 250px;
-        background-color: yellow;
-        /* float: left; */
-        text-align: center;
-        line-height: 250px;
+        width:50%;
     }
     
     #hDiv {
-        width: 190px;
-        height: 250px;
-        background-color: thistle;
+        width:50%;
+    }
+    
+    #ghDiv{
+        width: 50%;
+        height: 200px;
         float: right;
-        text-align: center;
-        line-height: 250px;
-    }
-    
-    
-    
-    footer div {
-        width: 100%;
-        height: 100%;
+        min-width: 50%;
+    }   
+
+    footer  {
         background-color: steelblue;
-    }
-    
-    footer div p {
         text-align: center;
         line-height: 150px;
+    } 
+
+    .clear{
+        clear: none;
     }
-    
-    }
+}
+
